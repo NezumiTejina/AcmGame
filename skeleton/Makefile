@@ -17,7 +17,7 @@ a1:	$(OBJS)
 	$(CXX) $(CXXLFAGS) $(CPPFLAGS) -o $(TARGET) $(OBJS) $(LIBS)
 
 clean:
-	rm -f *.o lib/*.o $(TARGET)
+	rm -f $(OBJS) $(TARGET)
 
 gl_viewer.o: gl_viewer.h gl_camera.h vector3.h
 main.o: application.h gl_viewer.h vector3.h
