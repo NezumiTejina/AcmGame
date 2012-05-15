@@ -176,6 +176,7 @@ void draw_grid()
     //
     // Draws a grid along the x-z plane
     //
+    #if 0
     glLineWidth(1.0);
     glColor3f(.20, .20, .20);
     glBegin(GL_LINES);
@@ -193,5 +194,13 @@ void draw_grid()
         glVertex3f(k,0,-ncells2);
     }
     glEnd();
+    #endif
+    
+    //Draw the terrain for the x-z plane
+    #define MAX_Y 20
+    #define MIN_Y 0
+    
+    
+    
     glEnable(GL_LIGHTING);
 }
